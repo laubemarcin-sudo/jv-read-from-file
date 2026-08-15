@@ -1,7 +1,5 @@
-package core.basesyntax;
-
-import java.io.*;
-import java.util.*;
+import java.io.;
+import java.util.;
 
 public class FileWork {
 
@@ -20,13 +18,8 @@ public class FileWork {
 
             for (String word : words) {
                 word = word.toLowerCase();
-                if (!word.isEmpty() && word.startsWith("w")) {
-                    result.add(word);
-                }
-            }
 
-
-            if (word.startsWith("w")) {
+                if (word.startsWith("w")) {
                     result.add(word);
                 }
             }
