@@ -1,7 +1,9 @@
+package core.basesyntax;
+
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class FileWork {
 
     public static String[] readFromFile(String filename) {
         List<String> result = new ArrayList<>();
