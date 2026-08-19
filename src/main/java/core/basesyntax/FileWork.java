@@ -1,10 +1,10 @@
-package core.basesyntax; // Upewnij się, że masz tę linię
-// Dodaj te importy na początku pliku
+package core.basesyntax;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
-public class FileWork { // Metoda musi być wewnątrz klasy!
+public class FileWork {
     public String[] readFromFile(String fileName) throws IOException {
         String text = Files.readString(Path.of(fileName));
         return Arrays.stream(text.split("[\\s\\p{Punct}]+"))
