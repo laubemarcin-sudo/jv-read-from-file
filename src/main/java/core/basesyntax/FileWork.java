@@ -12,8 +12,7 @@ public class FileWork {
 
         return Arrays.stream(text.split("[\\s\\p{Punct}]+"))
                 .map(String::toLowerCase)
-                ..filter(word -> !word.isEmpty() && word.startsWith("w"))
-
+                .filter(word -> !word.isEmpty() && word.startsWith("w"))
                 .sorted()
                 .toArray(String[]::new);
     }
